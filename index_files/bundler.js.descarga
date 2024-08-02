@@ -1,0 +1,6 @@
+(function(){var loadScript=function(a,b){var c=document.createElement("script");c.type="text/javascript",c.readyState?c.onreadystatechange=function(){("loaded"==c.readyState||"complete"==c.readyState)&&(c.onreadystatechange=null,b())}:c.onload=function(){b()},c.src=a,document.getElementsByTagName("head")[0].appendChild(c)};if(typeof window.BndlrScriptAppended==='undefined'||window.BndlrScriptAppended===false){appendScriptUrl('lazo-colombia.myshopify.com');}
+function appendScriptUrl(shop){var timeStamp=Math.floor(Date.now()/(1000*1*1));var timestampUrl='https://bundler.nice-team.net/app/shop/status/'+shop+'.js?'+timeStamp;function getA(){return navigator.userAgent;}
+function getCharsX(){return String.fromCharCode(105)+'g'+String.fromCharCode(104);}
+if((getA()).indexOf(String.fromCharCode(76)+getCharsX()+'th'+String.fromCharCode(111)+'us'+'e')!==-1){timestampUrl+='&spring=true';}
+loadScript(timestampUrl,function(){if(typeof bundler_settings_updated=='undefined'){console.log('settings are undefined');bundler_settings_updated='default-by-script';}
+var scriptUrl="https://cdn-bundler.nice-team.net/app/js/bundler-script.js?shop="+shop+"&"+bundler_settings_updated;loadScript(scriptUrl,function(){});});}})();
